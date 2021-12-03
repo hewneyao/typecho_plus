@@ -19,7 +19,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
             <a itemprop="url" href="<?php $this->permalink() ?>">
                 <div class="post-content" itemprop="articleBody">
                     <?php /*$this->content('- 阅读剩余部分 -'); */?>
-                    <?php $this->excerpt(800, '...'); ?>
+                    <?php $this->excerpt(400, '...'); ?>
                 </div>
             </a>
             <ul class="post-meta">
