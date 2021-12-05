@@ -194,6 +194,14 @@ textarea {
     /*font-size: 1.4em;*/
     font-size: 1.6em;
 }
+
+.post-detail{
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 0 12px 15px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+    box-shadow: 0 12px 15px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+}
+
 /** 文章详情 */
 .post-detail .post-title{
     font-size: 2em;
