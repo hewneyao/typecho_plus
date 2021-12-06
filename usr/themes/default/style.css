@@ -207,15 +207,17 @@ textarea {
 .post-title {
     margin: .83em 0;
     /*font-size: 1.4em;*/
-    font-size: 1.6em;
+    font-size: 18px;
 }
 
 .post-detail {
+    padding: 2rem;
     background-color: #FFFFFF;
     transition: background-color 0.2s ease-in-out;
     border-radius: 0.5rem;
     -webkit-box-shadow: 0 12px 15px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
     box-shadow: 0 12px 15px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+    margin: 0px;
 }
 
 /** 文章详情 */
@@ -441,6 +443,7 @@ textarea {
     /*line-height: 1.5;*/
     word-wrap: break-word;
     line-height: 1.75;
+    font-size: 16px;
 }
 
 /*.post-content h2, .comment-content h2 {*/
@@ -513,10 +516,6 @@ img.alignright {
 @media (min-width: 1920px) {
     .container {
         max-width: 95%;
-    }
-
-    .post-title {
-        font-size: 1.4em;
     }
 }
 

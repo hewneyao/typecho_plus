@@ -1,6 +1,7 @@
 /*µ¼º½*/
 .BlogAnchor {
     padding: 3rem 0 0 0;
+    position: fixed;
 }
 
 .BlogAnchor p {
