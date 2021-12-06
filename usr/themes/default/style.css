@@ -1,5 +1,4 @@
 * {
-    padding: 0;
     margin: 0;
 }
 
@@ -24,7 +23,7 @@ a:hover, a:active {
 
 pre, code {
     background: #F3F3F3;
-    font-family:  "Lucida Console", "Courier New", monospace, Menlo, Monaco, Consolas;
+    font-family: "Lucida Console", "Courier New", monospace, Menlo, Monaco, Consolas;
     font-size: .92857em;
 }
 
@@ -65,6 +64,20 @@ table th, table td {
 
 table th {
     background: #f3f3f3;
+}
+
+.post-content h2 {
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.post-content h3 {
+    color: rgb(39, 147, 195);
+}
+
+.post-content h5 {
+    color: rgb(57, 119, 15);
 }
 
 h1, h2, h3, h4, h5, h6 {

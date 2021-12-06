@@ -19,7 +19,9 @@
 
 .BlogAnchor li {
     text-indent: 20px;
-    font-size: 14px;
+    font-size: 1.0rem;
+    font-weight: bold;
+    margin: 5px 0px;
 }
 
 #AnchorContentToggle {
@@ -45,4 +47,7 @@
     .BlogAnchor {
         display: none;
     }
+}
+#AnchorContent{
+    padding: 0px;
 }
