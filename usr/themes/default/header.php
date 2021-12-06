@@ -23,6 +23,13 @@
     <script src="//cdnjscn.b0.upaiyun.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
+    <script src="<?php $this->options->themeUrl('./highlight/highlight.min.js'); ?>"></script>
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('./highlight/styles/idea.min.css'); ?>">
+
+    <script src="<?php $this->options->themeUrl('./jquery/jquery-3.6.0.min.js'); ?>"></script>
+
+
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('./nav/nav.css'); ?>">
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
 </head>

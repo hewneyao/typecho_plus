@@ -1,12 +1,12 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
 body {
-    /*background-color: #FFF;*/
+    background-color: #FFF;
     /*background-color: #f6f6f3;*/
-    background-color: #eceff1;
+    /*background-color: #eceff1;*/
     color: #444;
     font-family: "Droid Serif", Georgia, "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", "Microsoft Yahei", serif;
     /*font-size: 87.5%;*/
@@ -24,7 +24,7 @@ a:hover, a:active {
 
 pre, code {
     background: #F3F3F3;
-    font-family: Menlo, Monaco, Consolas, "Lucida Console", "Courier New", monospace;
+    font-family:  "Lucida Console", "Courier New", monospace, Menlo, Monaco, Consolas;
     font-size: .92857em;
 }
 
@@ -34,7 +34,9 @@ code {
 }
 
 pre {
-    padding: 10px;
+    /*padding: 10px;*/
+    border: 2px solid gray;
+    margin: 10px;
     /*overflow: auto;*/
     /*max-height: 400px;*/
 }
@@ -195,7 +197,8 @@ textarea {
     font-size: 1.6em;
 }
 
-.post-detail{
+.post-detail {
+    background-color: #FFFFFF;
     transition: background-color 0.2s ease-in-out;
     border-radius: 0.5rem;
     -webkit-box-shadow: 0 12px 15px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
@@ -203,7 +206,7 @@ textarea {
 }
 
 /** 文章详情 */
-.post-detail .post-title{
+.post-detail .post-title {
     font-size: 2em;
     text-align: center;
 }
@@ -215,8 +218,9 @@ textarea {
     font-size: .92857em;
     margin-bottom: 10px;
 }
+
 /** 文章详情 */
-.post-detail .post-meta{
+.post-detail .post-meta {
     text-align: center;
     margin-bottom: 20px;
 }
@@ -426,9 +430,9 @@ textarea {
     line-height: 1.75;
 }
 
-.post-content h2, .comment-content h2 {
-    font-size: 1.28571em;
-}
+/*.post-content h2, .comment-content h2 {*/
+/*    font-size: 1.em; */
+/*}*/
 
 .post-content img, .comment-content img, .post-content video, .comment-content video {
     max-width: 100%;
@@ -490,6 +494,16 @@ img.alignright {
 @media (min-width: 1200px) {
     .container {
         max-width: 90%;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        max-width: 95%;
+    }
+
+    .post-title {
+        font-size: 1.4em;
     }
 }
 
