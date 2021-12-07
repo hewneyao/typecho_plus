@@ -3,13 +3,18 @@
 }
 
 body {
-    background-color: #FFF;
+    background-color: rgba(18, 18, 18, 0);
+    /*background-color: #FFF;*/
     /*background-color: #f6f6f3;*/
     /*background-color: #eceff1;*/
     color: #444;
-    font-family: "Droid Serif", Georgia, "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", "Microsoft Yahei", serif;
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif,
+    "Droid Serif", Georgia, "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", "Microsoft Yahei", serif;
     /*font-size: 87.5%;*/
     font-size: 1em;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    background-color: #EEEEEE;
+    color: #3c4858;
 }
 
 a {
@@ -402,11 +407,11 @@ textarea {
 }
 
 #secondary {
-    padding-top: 17px;
-    word-wrap: break-word;
-    background-color: #ffffff;
-    box-shadow: 0 0 29px #ffffff;
-    margin-top: 17px;
+    /*padding-top: 17px;*/
+    /*word-wrap: break-word;*/
+    /*!*background-color: #ffffff;*!*/
+    /*!*box-shadow: 0 0 29px #ffffff;*!*/
+    /*margin-top: 17px;*/
 }
 
 .widget {
@@ -500,20 +505,57 @@ img.alignright {
         margin: 0 -2px;
     }
 
-    .post-detail{
+    .post-detail {
         padding: 0.5rem;
     }
 
-    .post-detail pre{
+    .post-detail pre {
         padding: 0px;
     }
 }
 
+/*手机屏幕适配*/
 @media (max-width: 768px) {
-    #header, .post-title, .post-meta {
+
+    #header {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        z-index:99999999999999;
+    }
+    #body {
+        margin-top: 80px;
+    }
+    #header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .post-title, .post-meta {
         text-align: center;
     }
+
+    .post {
+        border-radius: 5px;
+    }
+
+    .post-list .post-content {
+        display: -webkit-box; /*  display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示  */
+        -webkit-box-orient: vertical; /*  -webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式  */
+        -webkit-line-clamp: 5; /*  -webkit-line-clamp用来限制在一个块元素显示的文本的行数 */
+        overflow: hidden;
+        /* padding: 15px 0 20px; */
+        max-height: 150px;
+        /* word-break: normal; */
+        content-visibility: auto;
+    }
+
+    #logo{
+        display: none;
+    }
 }
+
+/*手机屏幕适配*/
 
 @media (min-width: 1200px) {
     .container {
@@ -522,8 +564,24 @@ img.alignright {
 }
 
 @media (min-width: 1920px) {
-    .container {
-        max-width: 95%;
+
+    #body {
+        margin-top: 130px;
+    }
+
+    /*.container {*/
+    /*    max-width: 70%;*/
+    /*}*/
+
+    #header {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        z-index:99999999999999;
+    }
+
+    #header .container {
+        max-width: 85%;
     }
 
     .post-content img, .comment-content img, .post-content video, .comment-content video {

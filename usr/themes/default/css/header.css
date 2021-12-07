@@ -1,0 +1,42 @@
+
+#header{
+    padding: 15px 0;
+    background-color: rgb(47,65,84);
+}
+
+#header .container row{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.site-search{
+    float: right;
+}
+
+#nav-menu {
+    padding: 0;
+    float: right;
+    margin: 0;
+}
+
+#nav-menu a {
+    display: block;
+    margin-right: -1px;
+    padding: 0 20px;
+    border: 1px solid #EEE;
+    height: 32px;
+    line-height: 32px;
+    color: white;
+    float: left;
+}
+
+#search {
+    position: relative;
+    margin-top: 0px;
+}
+
+#logo {
+    color: #FFFFFF;
+    font-size: 1.5em;
+}
