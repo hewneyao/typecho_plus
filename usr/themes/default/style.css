@@ -34,7 +34,7 @@ pre, code {
 
 code {
     padding: 2px 4px;
-    color: #B94A48;
+    color: #0042f1;
 }
 
 pre {
@@ -216,7 +216,7 @@ textarea {
 }
 
 .post-detail {
-    padding: 2rem;
+    padding: 2.5rem;
     background-color: #FFFFFF;
     transition: background-color 0.2s ease-in-out;
     border-radius: 0.5rem;
@@ -448,7 +448,7 @@ textarea {
     /*line-height: 1.5;*/
     word-wrap: break-word;
     line-height: 1.75;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /*.post-content h2, .comment-content h2 {*/
@@ -521,7 +521,7 @@ img.alignright {
         position: fixed;
         top: 0px;
         width: 100%;
-        z-index:99999999999999;
+        z-index:999;
     }
     #body {
         margin-top: 80px;
@@ -555,11 +555,26 @@ img.alignright {
     }
 }
 
-/*手机屏幕适配*/
+/*笔记本*/
 
 @media (min-width: 1200px) {
-    .container {
-        max-width: 90%;
+    #header .container {
+        max-width: 95%;
+    }
+    
+    #body .container {
+        max-width: 100%;
+    }
+
+    #body {
+        margin-top: 100px;
+    }
+
+    #header {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        z-index:999;
     }
 }
 
@@ -577,7 +592,7 @@ img.alignright {
         position: fixed;
         top: 0px;
         width: 100%;
-        z-index:99999999999999;
+        z-index:999;
     }
 
     #header .container {

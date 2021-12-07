@@ -58,7 +58,7 @@
 
 
             <!--搜索框-->
-            <div class="site-search col-push-6 col-1 kit-hidden-tb">
+            <div class="site-search col-push-6 col-2 kit-hidden-tb">
                 <form id="search" method="post" action="<?php $this->options->siteUrl(); ?>" role="search">
                     <label for="s" class="sr-only"><?php _e('搜索关键字'); ?></label>
                     <input type="text" id="s" name="s" class="text" placeholder="<?php _e('输入关键字搜索'); ?>"/>
@@ -67,7 +67,7 @@
             </div>
             <!--搜索框 end-->
             <!--导航栏-->
-            <div class="col-mb-12 col-mb-12 col-push-5 col-3" >
+            <div class="col-mb-12 col-mb-12 col-push-6 col-3" >
                 <nav id="nav-menu" class="clearfix" role="navigation">
                     <a<?php if ($this->is('index')): ?> class="current"<?php endif; ?>
                             href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a>

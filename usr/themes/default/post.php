@@ -38,22 +38,16 @@
         </p>
         <div class="AnchorContent">
             <ul id="AnchorContent">
-
             </ul>
         </div>
     </div>
 </div><!-- end #main-->
 
-<?php /*$this->need('sidebar.php'); */ ?>
-<!--<script src="--><?php //$this->options->themeUrl('./div_to_pdf/html2canvas.min.js'); ?><!--"></script>-->
-<!--<script src="--><?php //$this->options->themeUrl('./div_to_pdf/jspdf.umd.min.js'); ?><!--"></script>-->
-<!--<script src="--><?php //$this->options->themeUrl('./div_to_pdf/canvas2image.js'); ?><!--"></script>-->
-<!--<script src="--><?php //$this->options->themeUrl('./div_to_pdf/div_to_pdf.js'); ?><!--"></script>-->
 <script src="<?php $this->options->themeUrl('./nav/nav.js'); ?>"></script>
 <script src="<?php $this->options->themeUrl('./viewer/viewer.min.js'); ?>"></script>
+<script src="<?php $this->options->themeUrl('./plugins/copy_code.js'); ?>"></script>
 <script>
     hljs.initHighlightingOnLoad();
-
     $('#article').viewer();
 </script>
 <?php $this->need('footer.php'); ?>
