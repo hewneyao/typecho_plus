@@ -1,7 +1,7 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
 
-<div class="col-mb-12 col-push-1 col-9" id="main" role="main">
+<div class="col-mb-12 col-push-2 col-8" id="main" role="main">
     <article class="post post-detail" id="article" itemscope itemtype="http://schema.org/BlogPosting">
         <h1 class="post-title" itemprop="name headline">
             <a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a>
@@ -31,7 +31,7 @@
     </ul>
 </div><!-- end #main-->
 
-<div class="col-mb-12 col-push-1 col-2">
+<div class="col-mb-12 col-push-2 col-2">
     <div class="BlogAnchor">
         <p>
             <b id="AnchorContentToggle" title="收起" style="cursor:pointer;">目录[-]</b>
@@ -53,6 +53,7 @@
 <script src="<?php $this->options->themeUrl('./viewer/viewer.min.js'); ?>"></script>
 <script>
     hljs.initHighlightingOnLoad();
+
     $('#article').viewer();
 </script>
 <?php $this->need('footer.php'); ?>

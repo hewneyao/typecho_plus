@@ -499,6 +499,14 @@ img.alignright {
         display: inline-block;
         margin: 0 -2px;
     }
+
+    .post-detail{
+        padding: 0.5rem;
+    }
+
+    .post-detail pre{
+        padding: 0px;
+    }
 }
 
 @media (max-width: 768px) {
