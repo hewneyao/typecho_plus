@@ -8,7 +8,8 @@
         </h1>
         <ul class="post-meta">
             <li itemprop="author" itemscope itemtype="http://schema.org/Person"><?php _e('作者: '); ?>
-                <a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a>
+                <a itemprop="name" href="<?php $this->author->permalink(); ?>"
+                   rel="author"><?php $this->author(); ?></a>
             </li>
             <li><?php _e('时间: '); ?>
                 <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
@@ -16,7 +17,7 @@
             <li><?php _e('分类: '); ?><?php $this->category(','); ?></li>
             <li itemprop="keywords" class="tags"><?php _e('标签: '); ?><?php $this->tags(', ', true, 'none'); ?></li>
         </ul>
-        <!--        <hr>-->
+        <!--<hr>-->
         <div class="post-content" itemprop="articleBody">
             <?php $this->content(); ?>
         </div>
@@ -49,5 +50,9 @@
 <!--<script src="--><?php //$this->options->themeUrl('./div_to_pdf/canvas2image.js'); ?><!--"></script>-->
 <!--<script src="--><?php //$this->options->themeUrl('./div_to_pdf/div_to_pdf.js'); ?><!--"></script>-->
 <script src="<?php $this->options->themeUrl('./nav/nav.js'); ?>"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+<script src="<?php $this->options->themeUrl('./viewer/viewer.min.js'); ?>"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+    $('#article').viewer();
+</script>
 <?php $this->need('footer.php'); ?>

@@ -517,6 +517,11 @@ img.alignright {
     .container {
         max-width: 95%;
     }
+
+    .post-content img, .comment-content img, .post-content video, .comment-content video {
+        margin: 0 auto;
+        max-width: 50%;
+    }
 }
 
 .hidden {
