@@ -1,4 +1,3 @@
-/*µ¼º½*/
 .BlogAnchor {
     padding: 3rem 0 0 0;
     position: fixed;
@@ -51,4 +50,6 @@
 }
 #AnchorContent{
     padding: 0px;
+    overflow: auto;
+    height: 60vh;
 }
