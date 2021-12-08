@@ -1,6 +1,9 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
 
+<div id="body">
+    <div class="container">
+        <div class="row">
     <div class="col-mb-12 col-tb-8 col-tb-offset-2">
 
         <div class="error-page">
