@@ -29,7 +29,7 @@ a:hover, a:active {
 pre, code {
     background: #F3F3F3;
     font-family: "Lucida Console", "Courier New", monospace, Menlo, Monaco, Consolas;
-    font-size: .92857em;
+    /*font-size: .92857em;*/
 }
 
 code {
@@ -71,6 +71,12 @@ table th {
     background: #f3f3f3;
 }
 
+.post-content a{
+    color: #0000ff;
+    font-weight: bold;
+}
+
+
 .post-content h2 {
     font-weight: bold;
     line-height: 1.5;
@@ -83,6 +89,25 @@ table th {
 
 .post-content h5 {
     color: rgb(57, 119, 15);
+}
+
+.post-content h1 {
+    font-size: 24px;
+}
+.post-content h2 {
+    font-size: 22px;
+}
+.post-content h3 {
+    font-size: 20px;
+}
+.post-content h4 {
+    font-size: 18px;
+}
+.post-content h5 {
+    font-size: 16px;
+}
+.post-content h6 {
+    font-size: 14px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -517,15 +542,31 @@ img.alignright {
 /*手机屏幕适配*/
 @media (max-width: 768px) {
 
+    .row [class*="col-"] {
+        float: left;
+        min-height: 1px;
+        padding: 0;
+        /* padding-right: 10px; */
+        /* padding-left: 10px; */
+    }
+
+    #article{
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+
     #header {
-        position: fixed;
-        top: 0px;
-        width: 100%;
-        z-index:999;
+        /*position: fixed;*/
+        /*top: 0px;*/
+        /*width: 100%;*/
+        /*z-index:999;*/
+        margin-bottom: 0;
     }
-    #body {
-        margin-top: 80px;
-    }
+    /*#body {*/
+    /*    margin-top: 50px;*/
+    /*}*/
+
     #header {
         display: flex;
         justify-content: center;
