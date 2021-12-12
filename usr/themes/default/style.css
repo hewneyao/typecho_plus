@@ -537,6 +537,8 @@ img.alignright {
     .post-detail pre {
         padding: 0px;
     }
+
+
 }
 
 /*手机屏幕适配*/
@@ -553,6 +555,7 @@ img.alignright {
     #article{
         box-shadow: none;
         border-radius: 0;
+        padding: 30px;
     }
 
 
