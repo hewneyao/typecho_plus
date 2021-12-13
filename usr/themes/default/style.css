@@ -85,34 +85,42 @@ table th {
 
 .post-content h3 {
     color: rgb(39, 147, 195);
+    margin: 0.4em 0;
 }
 
 .post-content h5 {
     color: rgb(57, 119, 15);
+    margin: 0.4em 0;
 }
 
 .post-content h1 {
     font-size: 24px;
+    margin: 0.4em 0;
 }
 
 .post-content h2 {
     font-size: 22px;
+    margin: 0.4em 0;
 }
 
 .post-content h3 {
     font-size: 20px;
+    margin: 0.4em 0;
 }
 
 .post-content h4 {
     font-size: 18px;
+    margin: 0.4em 0;
 }
 
 .post-content h5 {
     font-size: 16px;
+    margin: 0.4em 0;
 }
 
 .post-content h6 {
     font-size: 14px;
+    margin: 0.4em 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -156,8 +164,9 @@ textarea {
 
 #header {
     padding-top: 35px;
-    border-bottom: 1px solid #EEE;
-    background-color: darkolivegreen;
+    /*border-bottom: 1px solid #EEE;*/
+    /*background-color: darkolivegreen;*/
+    background-color: #125297;
     margin-bottom: 30px;
 }
 
@@ -250,9 +259,10 @@ textarea {
     background-color: #FFFFFF;
     transition: background-color 0.2s ease-in-out;
     border-radius: 0.5rem;
-    -webkit-box-shadow: 0 12px 15px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
-    box-shadow: 0 12px 15px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
-    margin: 0px;
+    /*-webkit-box-shadow: 0 12px 15px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);*/
+    /*box-shadow: 0 12px 15px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);*/
+    margin: 0 auto;
+    box-shadow: 0 0px 5px 0 rgb(0 0 0 / 24%), 0 0px 5px 0 rgb(0 0 0 / 19%);
 }
 
 /** 文章详情 */
@@ -565,19 +575,9 @@ img.alignright {
 
 
     #header {
-        /*position: fixed;*/
-        /*top: 0px;*/
-        /*width: 100%;*/
-        /*z-index:999;*/
-        margin-bottom: 0;
-    }
-
-    /*#body {*/
-    /*    margin-top: 50px;*/
-    /*}*/
-    #header {
         display: flex;
         justify-content: center;
+        margin-bottom: 0;
     }
 
     .post-title, .post-meta {
@@ -594,15 +594,16 @@ img.alignright {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        text-align: center;
     }
 
-    .post-near li:first-child {
-        padding-left: 15px;
-    }
+    /*.post-near li:first-child {*/
+    /*    padding-left: 15px;*/
+    /*}*/
 
-    .post-near li:last-child {
-        padding-right: 15px;
-    }
+    /*.post-near li:last-child {*/
+    /*    padding-right: 15px;*/
+    /*}*/
 
     .post-list .post-content {
         display: -webkit-box; /*  display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示  */
@@ -654,7 +655,7 @@ img.alignright {
     /*}*/
     #header {
         position: fixed;
-        top: 0px;
+        top: 0;
         width: 100%;
         z-index: 999;
     }
