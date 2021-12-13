@@ -71,7 +71,7 @@ table th {
     background: #f3f3f3;
 }
 
-.post-content a{
+.post-content a {
     color: #0000ff;
     font-weight: bold;
 }
@@ -94,18 +94,23 @@ table th {
 .post-content h1 {
     font-size: 24px;
 }
+
 .post-content h2 {
     font-size: 22px;
 }
+
 .post-content h3 {
     font-size: 20px;
 }
+
 .post-content h4 {
     font-size: 18px;
 }
+
 .post-content h5 {
     font-size: 16px;
 }
+
 .post-content h6 {
     font-size: 14px;
 }
@@ -458,10 +463,10 @@ textarea {
 }
 
 #footer {
-    padding: 3em 0;
+    padding: 3em 1em;
     line-height: 1.5;
     text-align: center;
-    color: #999;
+    color: #000000;
 }
 
 .error-page {
@@ -552,7 +557,7 @@ img.alignright {
         /* padding-left: 10px; */
     }
 
-    #article{
+    #article {
         box-shadow: none;
         border-radius: 0;
         padding: 30px;
@@ -566,10 +571,10 @@ img.alignright {
         /*z-index:999;*/
         margin-bottom: 0;
     }
+
     /*#body {*/
     /*    margin-top: 50px;*/
     /*}*/
-
     #header {
         display: flex;
         justify-content: center;
@@ -580,7 +585,23 @@ img.alignright {
     }
 
     .post {
-        border-radius: 5px;
+        /*border-radius: 5px;*/
+    }
+
+    .post-near li {
+        display: block;
+        width: 50%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .post-near li:first-child {
+        padding-left: 15px;
+    }
+
+    .post-near li:last-child {
+        padding-right: 15px;
     }
 
     .post-list .post-content {
@@ -594,7 +615,7 @@ img.alignright {
         content-visibility: auto;
     }
 
-    #logo{
+    #logo {
         display: none;
     }
 }
@@ -605,7 +626,7 @@ img.alignright {
     #header .container {
         max-width: 95%;
     }
-    
+
     #body .container {
         max-width: 100%;
     }
@@ -618,7 +639,7 @@ img.alignright {
         position: fixed;
         top: 0px;
         width: 100%;
-        z-index:999;
+        z-index: 999;
     }
 }
 
@@ -631,12 +652,11 @@ img.alignright {
     /*.container {*/
     /*    max-width: 70%;*/
     /*}*/
-
     #header {
         position: fixed;
         top: 0px;
         width: 100%;
-        z-index:999;
+        z-index: 999;
     }
 
     #header .container {
