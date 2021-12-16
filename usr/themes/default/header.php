@@ -12,7 +12,6 @@
             'tag' => _t('标签 %s 下的文章'),
             'author' => _t('%s 发布的文章')
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
-
     <!-- 使用url函数转换相关路径 -->
     <link rel="stylesheet" href="//cdnjscn.b0.upaiyun.com/libs/normalize/2.1.3/normalize.min.css">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('grid.css'); ?>">
@@ -32,6 +31,15 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('./viewer/viewer.min.css'); ?>">
     <!--文档导航样式-->
     <link rel="stylesheet" href="<?php $this->options->themeUrl('./nav/nav.css'); ?>">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?4677aa6fa75fcfcbc36b37e4ef58174b";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
 </head>
